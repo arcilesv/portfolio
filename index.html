@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/styles/normalize.css">
+    <link rel="stylesheet" href="./assets/styles/progressbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./assets/styles/styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <h1>Hello, I'm <span class="highlight"> Victor Arciles</span>. <br> 
+            I'm a full-stack web developer.
+        </h1>
+        <a href="index.html#projects" class="main-button">View My Work</a>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <input type="checkbox" id="menu">
+        <label for="menu">☰</label>
+        <ul class="hamburger-menu">
+            <li class="item-menu"><a href="#">HOME</a></li>
+            <li class="item-menu"><a href="index.html#about">ABOUT</a></li>
+            <li class="item-menu"><a href="index.html#projects">PORTFOLIO</a></li>
+            <li class="item-menu"><a href="index.html#blog">BLOG</a></li>
+            <li class="item-menu"><a href="index.html#social">CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- About -->
+    <section id="about">
+        <!-- Icons Containers -->
+        <h2 class="section-tilte">ABOUT</h2>
+        <div class="cards-container">
+            <div class="icon-card">
+                <div class="icon-container">
+                    <i class="fas fa-tachometer-alt fa-3x"></i>
+                </div>
+                <h3>Fast</h3>
+                <p>Fast load times and lag free imterraction my highest priority.</p>
+            </div>
+
+            <div class="icon-card">
+                <div class="icon-container">
+                    <i class="far fa-lightbulb fa-3x"></i>
+                </div>
+                <h3>Intuitive</h3>
+                <p>Strong preference for easy to use, intuitive UX/UI.</p>
+            </div>
+
+            <div class="icon-card">
+                <div class="icon-container">
+                    <i class="fas fa-mobile fa-3x"></i>
+                </div>
+                <h3>Responsive</h3>
+                <p>My layouts will work on any device.</p>
+            </div>
+
+            <div class="icon-card">
+                <div class="icon-container">
+                    <i class="fas fa-rocket fa-3x"></i>
+                </div>
+                <h3>Dynamic</h3>
+                <p>Websites don't have to be static. I love making pages come to life .</p>
+            </div>
+
+        </div>
+
+        <!-- Who's this guy? -->
+        <div class="profile-card">
+            <img src="http://findmatthew.com/img/me.png" alt="just-me">
+            <h3>Who's this guy?</h3>
+            <p>I'm a Front-End Developer living in San Pedro Sula in Honduras, CA. I have serious passion for UI effects, animations and creating intuitive, dynamic user experiences.</p>
+        </div>
+
+        <!-- Skills Progress Bars -->
+        <div class="progress-bars">
+            <<ul class="skills">
+                <li class="item-skill">
+                    <h2>Frontend</h2>
+                    
+                    <!-- HTML5 -->
+                <p style="width:80%" data-value="80">HTML5</p>
+                    <progress max="100" value="80" class="html5">
+                        <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                        <div class="progress-bar">
+                            <span style="width: 80%">80%</span>
+                        </div>
+                    </progress>
+                    
+                    <!-- CSS3 -->
+                <p style="width:60%" data-value="60">CSS3</p>
+                    <progress max="100" value="60" class="css3">
+                        <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                        <div class="progress-bar">
+                            <span style="width: 60%">60%</span>
+                        </div>
+                    </progress>
+                    
+                    <!-- jQuery -->
+                <p style="width:50%" data-value="50">jQuery</p>
+                    <progress max="100" value="50" class="jquery">
+                        <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                        <div class="progress-bar">
+                            <span style="width: 50%">50%</span>
+                        </div>
+                    </progress>
+                    
+                </li>
+                <li class="item-skill">
+                    <h2>Backend</h2>
+                    
+                <!-- Python -->
+                <p style="width:75%" data-value="75">Python</p>
+                    <progress max="100" value="75" class="python">
+                        <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                        <div class="progress-bar">
+                            <span style="width: 75%">75%</span>
+                        </div>
+                    </progress>
+                    
+                    <!-- PHP -->
+                <p style="width:65%" data-value="65">PHP</p>
+                    <progress max="100" value="65" class="php">
+                        <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                        <div class="progress-bar">
+                            <span style="width: 65%">65%</span>
+                        </div>
+                    </progress>
+                    
+                    <!-- Node.js -->
+                <p style="width:35%" data-value="35">Node</p>
+                <progress max="100" value="35" class="node-js">
+                        <!-- Browsers that support HTML5 progress element will ignore the html inside `progress` element. Whereas older browsers will ignore the `progress` element and instead render the html inside it. -->
+                        <div class="progress-bar">
+                            <span style="width: 35%">35%</span>
+                        </div>
+                    </progress>		
+                    
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2 class="section-tilte">PROJECTS</h2>
+        <div class="project-cards-container">
+            <div class="project-card">
+                <img src="http://findmatthew.com/style/../img/thumb-1.jpg"" alt="project">
+                <div class="overlay-project-card">
+                  <div class="bold">ChowNow Ordering</div>
+                  <span class="highlight">React JS / Python</span>
+                  <a href="#" class="button-card" id="ordering">LEARN MORE</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="http://findmatthew.com/style/../img/thumb-2.jpg"" alt="project">
+                <div class="overlay-project-card">
+                  <div class="bold">New Relic</div>
+                  <span class="highlight">React JS / PHP</span>
+                  <a href="#" class="button-card" id="ordering">LEARN MORE</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="http://findmatthew.com/style/../img/thumb-3.jpg"" alt="project">
+                <div class="overlay-project-card">
+                  <div class="bold">Roambi</div>
+                  <span class="highlight">Javascript</span>
+                  <a href="#" class="button-card" id="ordering">LEARN MORE</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="http://findmatthew.com/style/../img/thumb-4.jpg"" alt="project">
+                <div class="overlay-project-card">
+                  <div class="bold">Walker Tracker</div>
+                  <span class="highlight">React JS / Node JS</span>
+                  <a href="#" class="button-card" id="ordering">LEARN MORE</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="http://findmatthew.com/style/../img/thumb-5.jpg"" alt="project">
+                <div class="overlay-project-card">
+                  <div class="bold">My Stand</div>
+                  <span class="highlight">Javascript / Node JS</span>
+                  <a href="#" class="button-card" id="ordering">LEARN MORE</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="http://findmatthew.com/style/../img/thumb-6.jpg"" alt="project">
+                <div class="overlay-project-card">
+                  <div class="bold">ChowNow Ordering</div>
+                  <span class="highlight">React JS / Python</span>
+                  <a href="#" class="button-card" id="ordering">LEARN MORE</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="http://findmatthew.com/style/../img/thumb-7.jpg"" alt="project">
+                <div class="overlay-project-card">
+                  <div class="bold">ChowNow Ordering</div>
+                  <span class="highlight">React JS / Python</span>
+                  <a href="#" class="button-card" id="ordering">LEARN MORE</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="http://findmatthew.com/style/../img/thumb-8.jpg"" alt="project">
+                <div class="overlay-project-card">
+                  <div class="bold">ChowNow Ordering</div>
+                  <span class="highlight">React JS / Python</span>
+                  <a href="#" class="button-card" id="ordering">LEARN MORE</a>
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog">
+        <h2>BLOG</h2>
+        <div class="blog-cards-container">
+            <a href="https://www.eyecuelab.com/breaking-your-coders-block/" target="_blank" class="blog-card">
+                <img src="http://findmatthew.com/style/../img/blog-1.jpg" alt="punch">
+                <h3>Breaking Your Coder's Block</h3>
+                <p>At one time or another, as a developer, we've all found ourselves hopelessly stuck on a coding issue...</p>
+            </a>
+
+            <a href="https://www.eyecuelab.com/blog" target="_blank" class="blog-card">
+                <img src="http://findmatthew.com/img/blog-2.jpg" alt="brain">
+                <h3>!Awake: This is Your Brain on Caffeine</h3>
+                <p>If there's one thing I can truly claim to be an expert on, it's staying awake. For five years I struggled to stay employed...</p>
+            </a>
+
+            <a href="https://www.eyecuelab.com/breaking-your-coders-block/" target="_blank" class="blog-card">
+                <img src="http://findmatthew.com/style/../img/blog-3.jpg" alt="punch">
+                <h3>Breaking Your Coder's Block</h3>
+                <p>At one time or another, as a developer, we've all found ourselves hopelessly stuck on a coding issue...</p>
+            </a>
+
+            <a href="https://www.eyecuelab.com/breaking-your-coders-block/" target="_blank" class="blog-card">
+                <img src="http://findmatthew.com/img/blog-4.jpg" alt="girl">
+                <h3>Breaking Your Coder's Block</h3>
+                <p>At one time or another, as a developer, we've all found ourselves hopelessly stuck on a coding issue...</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <footer>
+        <div class="social">
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+
+        <div class="footnote">
+            VICTOR ARCILES <span class="highlight">©2021</span>
+          </div>
+    </footer>
+</body>
+</html>

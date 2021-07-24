@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans+SC&family=Poppins&display=swap');
+
+:root {
+    --font-primary: 'Poppins', sans-serif;
+    --font-secondary: serif;
+    --hightlight-text: 'Encode Sans SC', sans-serif;
+
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+}
+
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+nav {
+  height: 40px;
+  margin-bottom: 50px;
+  text-align: right;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: lightgray;
+}
+
+.highlight {
+    color: red;
+    font-family: var(--hightlight-text);
+}
+
+h1 {
+    text-align: center;
+    font-size: 32pt;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+input {
+    display: none;
+  }
+
+.main-button {
+    text-decoration: none;
+    color: red;
+    padding: 20px 40px;
+    border: solid 1px red;
+    border-radius: 8px;
+    transition: all 1s;
+}
+
+.main-button:hover {
+  color: white;
+  background-color: red;
+}
+
+.hamburger-menu {
+  display: none;
+  padding: 0 ;
+  margin: 0;
+}
+
+
+input:checked  ~ .hamburger-menu{
+  display: block;
+}
+
+label {
+  box-sizing: border-box;
+  display: inline-block;
+  cursor: pointer;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  user-select: none;
+  }
+
+.item-menu {
+  display: block;
+  background: black;
+  text-align: center;
+  color: white;
+  margin: 0;
+  padding: 10px;
+  list-style: none;
+  border-bottom: 1px solid white;
+}
+
+.item-menu:hover {
+  background-color: red;
+}
+
+.item-menu a {
+  color: white;
+}
+
+i {
+  font-size: 40px;
+  color: white;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  width: 100px;
+  height: 90px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+}
+
+
+.icon-card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icon-card > h3 {
+  margin-bottom: 0;
+}
+
+.icon-card > p {
+  margin-top: 0;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card > img {
+  max-width: 80%;
+}
+
+.profile-card > p {
+  text-align: center;
+  padding: 10px;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.project-cards-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.project-card {
+  /* background: url("http://findmatthew.com/style/../img/thumb-1.jpg") center center/cover; */
+  position: relative;
+  transition: opacity 0.5s;
+  height: 300px;
+  /* width: calc(50vw - 8px); */
+}
+
+.project-card > img {
+  height: 300px;
+  width: 100%;
+}
+
+
+.overlay-project-card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: rgba(1, 1, 1, 0.9);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.overlay-project-card:hover{
+  opacity: 1;
+}
+
+.button-card {
+  padding: 10px 40px;
+  margin-top: 20px;
+  border: solid 2px red;
+  border-radius: 8px;
+  color: red;
+  }
+
+.button-card:hover {
+  background-color: red;
+  color: white;
+  transition: all 0.5s;
+  }
+
+.project-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+.blog-cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blog-card {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  transition: all 0.25s;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.12), 
+              0 2px 2px rgba(0,0,0,0.12), 
+              0 4px 4px rgba(0,0,0,0.12), 
+              0 8px 8px rgba(0,0,0,0.12),
+              0 16px 16px rgba(0,0,0,0.12);
+}
+
+.blog-card:hover {
+  transform: scale(1.01);
+  opacity: 0.5;
+}
+
+.blog-card > img {
+  width: 100%;
+}
+
+.blog-card > p {
+  text-align: left;
+  padding: 0 15px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 15vh;
+  background-color: black;
+}
+
+.social i {
+  color: red;
+  margin: 0px 10px;
+}
+
+.footnote {
+  background-color: black;
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+}
+
+/* Resposive Break Points */
+@media (min-width: 576px) { 
+  .cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+ }
+
+
+
+ @media (min-width: 768px) { 
+  label {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+  }
+
+  .item-menu {
+    border-bottom: 1px solid black;
+  }
+}
+
+@media (min-width: 992px) { 
+  .project-cards-container {
+    flex-direction: row;
+  }
+  .project-card {
+    width: calc(50vw - 8px); 
+  } 
+}
+
+@media (min-width: 1200px) { 
+  .project-card {
+    max-width: 400px; 
+    margin-bottom: 50px; 
+  } 
+
+  .blog-cards-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .blog-card {
+    max-width: 400px;
+  }
+
+ }
+
+
+
